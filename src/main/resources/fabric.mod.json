@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "fertilizermod",
+  "version": "${version}",
+
+  "name": "Fertilizer Mod",
+  "description": "Mod about fertilizers",
+  "authors": [
+    "FaxioJW"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/fertilizermod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.faxiojw.fertilizermod.ModInitialize"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
